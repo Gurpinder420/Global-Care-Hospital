@@ -1137,6 +1137,12 @@ footer{background:var(--ink);color:var(--steel)}
           .gallery-grid {
                 gap: 1rem;
             }
+            .testimonials-track
+            {
+             
+              display: flex;
+              flex-direction: column;
+            }
             .card-content {
                 padding: 0.9rem;
             }
