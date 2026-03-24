@@ -488,13 +488,11 @@ body{
             box-shadow: 0 20px 40px -12px rgba(0, 40, 60, 0.2);
             border: 1px solid rgba(66, 153, 188, 0.2);
             height: 150vh;
-            overflow: scroll;
+            overflow: auto;
+            overflow-x: hidden;
+            white-space: normal;
             
-           
-
-   overflow-x: scroll;   
-  white-space: nowrap; 
-    /* keep items in one line */
+            /* keep items in one line removed on mobile-safe layout */
 
             
             
