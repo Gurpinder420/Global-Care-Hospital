@@ -1134,9 +1134,24 @@ footer{background:var(--ink);color:var(--steel)}
         @media (max-width: 480px) {
          
             nav .nav-ul li a{font-size:22px;}
+           .h-stats
+           {
+           
+            width: 100%;
+           
+           }
+             .h-stat
+           {
+          
+            width: 135px;
+           }
             .cat-header
             {
-             
+              display: flex;
+              flex-direction: column;
+            }
+            .faq-grid
+            {
               display: flex;
               flex-direction: column;
             }
