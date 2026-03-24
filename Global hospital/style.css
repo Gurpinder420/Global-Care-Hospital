@@ -1132,7 +1132,11 @@ footer{background:var(--ink);color:var(--steel)}
         }
 
         @media (max-width: 480px) {
-         
+         .logo-t
+         {
+          height: 6vh;
+          margin: 5px;
+         }
             nav .nav-ul li a{font-size:22px;}
            .h-stats
            {
