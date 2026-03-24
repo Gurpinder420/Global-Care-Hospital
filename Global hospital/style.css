@@ -1136,7 +1136,7 @@ footer{background:var(--ink);color:var(--steel)}
             nav .nav-ul li a{font-size:22px;}
             .cat-header
             {
-              border: 2px solid red;
+             
               display: flex;
               flex-direction: column;
             }
