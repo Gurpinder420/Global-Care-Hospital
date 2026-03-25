@@ -959,9 +959,10 @@ body{
 .cr{display:flex;align-items:flex-start;gap:15px;padding:16px 18px;border-radius:13px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);transition:all .3s var(--ease-expo)}
 .cr:hover{background:rgba(14,165,233,.07);border-color:rgba(14,165,233,.25)}
 .cico{width:40px;height:40px;flex-shrink:0;border-radius:10px;background:rgba(14,165,233,.14);display:flex;align-items:center;justify-content:center;font-size:1rem}
+
 .ct strong{display:block;color:var(--white);font-size:.86rem;font-weight:600;margin-bottom:2px}
 .ct p{color:rgba(255,255,255,.47);font-size:.8rem;line-height:1.6;font-weight:300}
-.ct a{color:var(--sky-glow);text-decoration:none;transition:color .2s}
+.ct a{color:rgba(255,255,255,.47);text-decoration:none;transition:color .2s}
 .ct a:hover{color:var(--gold-lt)}
 .afc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:42px;backdrop-filter:blur(24px);box-shadow:0 40px 100px rgba(0,0,0,.3);position:relative;overflow:hidden}
 .afc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky),var(--gold),var(--sky))}
@@ -1010,13 +1011,10 @@ footer{background:var(--ink);color:var(--steel)}
 .fm{max-width:1280px;margin:0 auto;padding:68px 32px 46px}
 .fgr{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:52px}
 .ftag{color:rgba(255,255,255,.42);font-size:.875rem;line-height:1.75;margin-top:16px;margin-bottom:26px;font-weight:300;max-width:270px}
-.fso{display:flex;gap:9px;width: auto;}
-.fso a{color: aliceblue;outline: 1px solid var(--ink-soft);padding: 5px 10px 5px 10px;border-radius: 25px;}
-.fso :hover{bottom: 3px;position: relative;}
-.ig {background-color: rgb(188, 57, 188);}
-.wa {background-color: rgb(65, 206, 65);}
-/* .fs{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:var(--steel);text-decoration:none;font-size:.85rem;font-weight:700;transition:all .25s var(--ease-expo)} */
-/* .fs:hover{background:var(--sky);color:var(--white);border-color:var(--sky);transform:translateY(-3px)} */
+.fso :hover{bottom: 3px;position: relative;} 
+
+.wa img {margin-left: 10px;}
+
 .fct{color:var(--white);font-size:.77rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:20px}
 .fl{list-style:none;display:flex;flex-direction:column;gap:10px}
 .fl a{color:rgba(148,163,184,.75);text-decoration:none;font-size:.875rem;transition:color .2s,padding-left .2s;display:block;font-weight:300}
