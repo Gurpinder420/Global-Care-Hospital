@@ -1012,8 +1012,8 @@ footer{background:var(--ink);color:var(--steel)}
 .fgr{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:52px}
 .ftag{color:rgba(255,255,255,.42);font-size:.875rem;line-height:1.75;margin-top:16px;margin-bottom:26px;font-weight:300;max-width:270px}
 .fso :hover{bottom: 3px;position: relative;} 
-
-.wa img {margin-left: 10px;}
+.ig img {height: 55px; border-radius: 10px;}
+.wa img {height: 55px; border-radius: 10px;margin-left: 10px;}
 
 .fct{color:var(--white);font-size:.77rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:20px}
 .fl{list-style:none;display:flex;flex-direction:column;gap:10px}
