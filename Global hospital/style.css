@@ -46,6 +46,7 @@ nav.scr{background:rgba(8,16,30,.97);backdrop-filter:blur(24px);box-shadow:0 2px
 {
     height: 9vh;
     border-radius: 5px;
+    background-color: aliceblue;
 }
 
 .nav-ul{display:flex;align-items:center;gap:2px;list-style:none}
@@ -996,17 +997,6 @@ select.fc option{background:var(--ink-mid);color:var(--white)}
 .nar{width:30px;height:30px;border-radius:8px;background:var(--mist);display:flex;align-items:center;justify-content:center;color:var(--ink);transition:all .3s}
 .nc:hover .nar{background:var(--sky);color:var(--white);transform:rotate(-45deg)}
 
-/* LOCATIONS */
-.ls{background:var(--ink-mid);padding:56px 32px}
-.ls-i{max-width:1280px;margin:0 auto}
-.ls-t{font-family:var(--font-display);font-size:1.35rem;color:var(--white);text-align:center;margin-bottom:32px}
-.lg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.lc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px;transition:all .3s var(--ease-expo)}
-.lc:hover{background:rgba(14,165,233,.08);border-color:rgba(14,165,233,.28);transform:translateY(-4px)}
-.lcy{color:var(--sky);font-weight:700;font-size:.92rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.la{color:rgba(255,255,255,.42);font-size:.77rem;line-height:1.7;margin-bottom:12px;font-weight:300}
-.lp a{color:var(--sky-glow);text-decoration:none;font-size:.8rem;font-weight:600;transition:color .2s}
-.lp a:hover{color:var(--gold-lt)}
 
 /* FOOTER */
 .logo-f img
@@ -1014,14 +1004,19 @@ select.fc option{background:var(--ink-mid);color:var(--white)}
   height: 65px;
   width: 180px;
   border-radius: 10px;
+  background-color: #f0eeee;
 }
 footer{background:var(--ink);color:var(--steel)}
 .fm{max-width:1280px;margin:0 auto;padding:68px 32px 46px}
 .fgr{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:52px}
 .ftag{color:rgba(255,255,255,.42);font-size:.875rem;line-height:1.75;margin-top:16px;margin-bottom:26px;font-weight:300;max-width:270px}
-.fso{display:flex;gap:9px}
-.fs{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:var(--steel);text-decoration:none;font-size:.85rem;font-weight:700;transition:all .25s var(--ease-expo)}
-.fs:hover{background:var(--sky);color:var(--white);border-color:var(--sky);transform:translateY(-3px)}
+.fso{display:flex;gap:9px;width: auto;}
+.fso a{color: aliceblue;outline: 1px solid var(--ink-soft);padding: 5px 10px 5px 10px;border-radius: 25px;}
+.fso :hover{bottom: 3px;position: relative;}
+.ig {background-color: rgb(188, 57, 188);}
+.wa {background-color: rgb(65, 206, 65);}
+/* .fs{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:var(--steel);text-decoration:none;font-size:.85rem;font-weight:700;transition:all .25s var(--ease-expo)} */
+/* .fs:hover{background:var(--sky);color:var(--white);border-color:var(--sky);transform:translateY(-3px)} */
 .fct{color:var(--white);font-size:.77rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:20px}
 .fl{list-style:none;display:flex;flex-direction:column;gap:10px}
 .fl a{color:rgba(148,163,184,.75);text-decoration:none;font-size:.875rem;transition:color .2s,padding-left .2s;display:block;font-weight:300}
