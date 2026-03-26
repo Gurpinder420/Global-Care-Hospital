@@ -805,6 +805,72 @@
           </div>
         </div>
       </div>
+        <div class="testimonial-card reveal delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Dr. Sharma's expertise during my bypass surgery was extraordinary. The entire cardiac team was incredibly attentive post-surgery. I returned to normal life in record time. Forever grateful.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Mr. Mahesh Joshi</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Cardiac Patient — Pune</div>
+          </div>
+        </div>
+      </div>
+       <div class="testimonial-card reveal delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">After my angioplasty, I was anxious, but the cardiology team guided me with compassion. The follow-up care and lifestyle advice helped me regain confidence. Truly world-class treatment.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Mrs. Sneha Kulkarni</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Heart Surgery — Mumbai</div>
+          </div>
+        </div>
+      </div>
+       <div class="testimonial-card reveal delay-3">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Minimally invasive valve replacement changed my life. The surgical team’s precision and the nursing staff’s warmth made all the difference. I’m back to my morning walks and gardening.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Mr. Rajiv Menon</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Cardiac Care — Bengaluru</div>
+          </div>
+        </div>
+      </div>
+        <div class="testimonial-card reveal delay-4">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">I was terrified of open-heart surgery, but Dr. Sharma’s confidence and the amazing cardiac rehab program gave me hope. Six months later, I feel stronger than ever. Highly recommend!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Mrs. Anita Deshmukh</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Bypass Recovery — Nagpur</div>
+          </div>
+        </div>
+      </div>
+       <div class="testimonial-card reveal delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">After my angioplasty, I was anxious, but the cardiology team guided me with compassion. The follow-up care and lifestyle advice helped me regain confidence. Truly world-class treatment.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Mrs. Sneha Kulkarni</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Heart Surgery — Mumbai</div>
+          </div>
+        </div>
+      </div>
+       <div class="testimonial-card reveal delay-4">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">I was terrified of open-heart surgery, but Dr. Sharma’s confidence and the amazing cardiac rehab program gave me hope. Six months later, I feel stronger than ever. Highly recommend!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Mrs. Anita Deshmukh</div>
+            <div class="testimonial-role"><i class="fas fa-map-marker-alt"></i> Bypass Recovery — Nagpur</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -935,29 +1001,6 @@ new IntersectionObserver(en=>{if(en[0].isIntersecting){document.querySelectorAll
 const ro=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('iv')})},{threshold:.1});
 document.querySelectorAll('[data-rv]').forEach(el=>ro.observe(el));
 
-/* SPECIALITIES */
-const specs=[
-  {i:'⚖️',n:'Bariatric Surgery'},{i:'🎀',n:'Breast Care Center'},{i:'🔪',n:'Cardiac Surgery'},
-  {i:'❤️',n:'Cardiology'},{i:'🫁',n:'Chest Medicine'},{i:'🦷',n:'Dental Care'},
-  {i:'🧴',n:'Dermatology'},{i:'👂',n:'ENT'},{i:'🩺',n:'Endocrinology & Diabetes'},
-  {i:'🔬',n:'Gastroenterology'},{i:'✂️',n:'General Surgery & MAS'},{i:'🫀',n:'HPB & Surgical Gastro'},
-  {i:'🩸',n:'Haematology & BMT'},{i:'🦠',n:'Infectious Diseases'},{i:'🏥',n:'Internal Medicine'},
-  {i:'📡',n:'Interventional Radiology'},{i:'🧠',n:'Mental Health'},{i:'🫘',n:'Nephrology'},
-  {i:'🧬',n:'Neurology'},{i:'⚡',n:'Neurosurgery'},{i:'🥗',n:'Nutrition & Dietetics'},
-  {i:'👶',n:'Obs & Gynaecology'},{i:'🎗️',n:'Oncology'},{i:'👁️',n:'Ophthalmology'},
-  {i:'🫀',n:'Organ Transplant'},{i:'🦴',n:'Orthopaedics'},{i:'🍼',n:'Paediatrics'},
-  {i:'💊',n:'Pain Clinic'},{i:'💆',n:'Plastic & Cosmetic Surgery'},{i:'🏃',n:'Rehabilitation'},
-  {i:'🤲',n:'Rheumatology'},{i:'🤖',n:'Robotic Knee Replacement'},{i:'⚙️',n:'Robotic Surgery'},
-  {i:'🦴',n:'Spine Surgery'},{i:'💙',n:'TAVI / TAVR'},{i:'🚿',n:'Urology'}
-];
-let showAll=false;const LIM=18;
-function renderSpecs(list){
-  const g=document.getElementById('sg');g.innerHTML='';
-  list.forEach((s,i)=>{const d=document.createElement('div');d.className='sc';d.innerHTML=`<div class="sic">${s.i}</div><div class="scn">${s.n}</div>`;g.appendChild(d);setTimeout(()=>d.classList.add('rv'),i*30)});
-}
-function filterSpecs(q){renderSpecs(specs.filter(s=>s.n.toLowerCase().includes(q.toLowerCase())));document.getElementById('smb').style.display=q?'none':''}
-function toggleSpecs(){showAll=!showAll;renderSpecs(showAll?specs:specs.slice(0,LIM));document.getElementById('smb').innerHTML=showAll?'Show Less <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>':'Show All 36 Specialities <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>'}
-renderSpecs(specs.slice(0,LIM));
 
 /* Gallery reveal on scroll */
 new IntersectionObserver(en=>{if(en[0].isIntersecting){document.querySelectorAll('.gi').forEach((el,i)=>setTimeout(()=>el.classList.add('rv'),i*60))}},{threshold:.1}).observe(document.getElementById('gg'));
@@ -1161,5 +1204,6 @@ function applyFilter(){
     }
   }
 </script>
+
 </body>
 </html>
