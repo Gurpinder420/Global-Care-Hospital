@@ -266,11 +266,12 @@ body{
 .stat-num{
   font-family:'Playfair Display',serif;
   font-size:44px;font-weight:700;
-  background:rgb(255, 185, 9);
+  background:greenyellow;
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
   display:block;line-height:1;
+  opacity: 100;
 }
-.stat-label{font-size:15px;letter-spacing:2px;text-transform:uppercase;color:rgb(255, 17, 17);margin-top:6px}
+.stat-label{font-size:15px;letter-spacing:2px;text-transform:uppercase;color:red;margin-top:6px}
 
 /* ── FILTER BAR ─────────────────────────────── */
 .filter-bar{
@@ -338,9 +339,10 @@ body{
 
 /* ── DEPT CARD ──────────────────────────────── */
 .dept-card{
-  background:var(--card-bg);
-  border:1px solid var(--border);
+  background-color: whitesmoke;
+
   border-radius:18px;
+  outline: 1px solid skyblue;
   padding:32px 28px;
   position:relative;overflow:hidden;
   cursor:pointer;
@@ -368,7 +370,7 @@ body{
 .dept-card:hover::after{transform:scaleX(1)}
 .dept-card:hover{
   transform:translateY(-6px);
-  box-shadow:0 24px 48px rgba(0,0,0,.4),0 0 0 1px rgba(26,108,246,.15);
+  outline: none;
   border-color:rgba(26,108,246,.25);
 }
 
@@ -381,7 +383,7 @@ body{
 .dept-card:hover .card-icon{transform:scale(1.1) rotate(-5deg)}
 
 .card-name{font-size:18px;font-weight:600;margin-bottom:8px;line-height:1.3}
-.card-text{font-size:13px;line-height:1.7;color:var(--soft)}
+.card-text{font-size:13px;line-height:1.7;color:black}
 
 .card-footer{
   display:flex;align-items:center;justify-content:space-between;
@@ -390,7 +392,7 @@ body{
 }
 .card-tag{
   font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
-  color:var(--soft);background:rgba(255,255,255,0.05);
+  color:black;background:rgba(255,255,255,0.05);
   padding:3px 10px;border-radius:100px;
 }
 .card-arrow{
@@ -460,13 +462,13 @@ body{
 @keyframes gf{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .ac{color:var(--white)}
 
-.afs{margin-top:34px;background-color: var(--ink-soft);border-radius: 10px;padding: 20px;  display:flex;flex-direction:column;gap:13px}
-.fr{display:flex; align-items:flex-start;gap:16px;padding:17px 20px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);transition:all .3s var(--ease-expo)}
+.afs{margin-top:34px;background-color: whitesmoke;border-radius:10px;padding: 20px;  display:flex;flex-direction:column;gap:13px}
+.fr{display:flex; align-items:flex-start;box-shadow:  2px 2px 2px 2px skyblue; gap:16px;padding:17px 20px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);transition:all .3s var(--ease-expo)}
 .fr:hover{background:rgba(14,165,233,.08);border-color:rgba(14,165,233,.28);transform:translateX(8px)}
 .fi{width:40px;height:40px;flex-shrink:0;border-radius:10px;background:rgba(14,165,233,.14);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:background .3s}
 .fr:hover .fi{background:var(--sky)}
-.ft strong{color:var(--white);font-size:.88rem;font-weight:600;display:block;margin-bottom:3px}
-.ft p{color:rgba(255,255,255,.48);font-size:.79rem;line-height:1.6;font-weight:300}
+.ft strong{color:var(--ink-mid);font-size:.88rem;font-weight:600;display:block;margin-bottom:3px}
+.ft p{color:var(--ink-soft);font-size:.79rem;line-height:1.6;font-weight:300}
 
 /* HEALTH CHECKUPS */
 #checkups{background:white}
@@ -951,28 +953,19 @@ body{
   .testimonial-name { font-weight: 600; font-size: 0.9rem; color: var(--navy); }
   .testimonial-role { font-size: 0.78rem; color: var(--gray); }
 
-
-/* Lightbox */
-/* .lb{position:fixed;inset:0;z-index:9990;background:rgba(8,16,30,.96);backdrop-filter:blur(22px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .4s}
-.lb.open{opacity:1;pointer-events:all}
-.lb-img{max-width:88vw;max-height:82vh;border-radius:16px;object-fit:contain;box-shadow:0 40px 120px rgba(0,0,0,.6);transform:scale(.82);transition:transform .4s var(--ease-expo)}
-.lb.open .lb-img{transform:scale(1)}
-.lb-x{position:absolute;top:24px;right:28px;color:var(--white);font-size:1.8rem;cursor:pointer;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:background .2s}
-.lb-x:hover{background:rgba(255,255,255,.2)}
-.lb-cap{position:absolute;bottom:32px;color:rgba(255,255,255,.55);font-size:.83rem;font-family:var(--font-display);font-style:italic} */
-
 /* APPOINTMENT */
 #appointment{background-color: white; position:relative;overflow:hidden}
 #appointment::before{content:'';position:absolute;width:480px;height:480px;background:radial-gradient(circle,rgba(14,165,233,.1) 0%,transparent 70%);bottom:-180px;right:-80px;pointer-events:none}
 .apg{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
-.ci{background: var(--ink-soft);padding: 15px;border-radius: 10px; display:flex;flex-direction:column;gap:14px;margin-top:34px}
-.cr{display:flex;align-items:flex-start;gap:15px;padding:16px 18px;border-radius:13px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);transition:all .3s var(--ease-expo)}
+.ci{background: whitesmoke;padding: 15px;border-radius: 10px; display:flex;flex-direction:column;gap:14px;margin-top:34px}
+.cr{display:flex;align-items:flex-start;gap:15px;padding:16px 18px;border-radius:13px;border:1px solid rgba(255,255,255,.08);box-shadow:  2px 2px 2px 2px skyblue;transition:all .3s var(--ease-expo)}
+.cr p {}
 .cr:hover{background:rgba(14,165,233,.07);border-color:rgba(14,165,233,.25)}
 .cico{width:40px;height:40px;flex-shrink:0;border-radius:10px;background:rgba(14,165,233,.14);display:flex;align-items:center;justify-content:center;font-size:1rem}
 
-.ct strong{display:block;color:var(--white);font-size:.86rem;font-weight:600;margin-bottom:2px}
-.ct p{color:rgba(255,255,255,.47);font-size:.8rem;line-height:1.6;font-weight:300}
-.ct a{color:rgba(255,255,255,.47);text-decoration:none;transition:color .2s}
+.ct strong{display:block;color:var(--ink-mid);font-size:.86rem;font-weight:600;margin-bottom:2px}
+.ct p{color: var(--ink-soft);;font-size:.8rem;line-height:1.6;font-weight:300}
+.ct a{color:var(--ink-soft);text-decoration:none;transition:color .2s}
 .ct a:hover{color:var(--gold-lt)}
 .afc{ background:rgb(237, 237, 237);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:42px;backdrop-filter:blur(24px);box-shadow:0 40px 100px rgba(0,0,0,.3);position:relative;overflow:hidden}
 .afc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky),var(--gold),var(--sky))}
