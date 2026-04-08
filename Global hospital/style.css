@@ -217,8 +217,9 @@ body{
   text-align:center;
   background:var(--white);
   border-bottom:1px solid var(--border);
-  background-image: url(/images/5.jpeg);
+  background-image: url(/images/77.jpg);
   background-size: 100% 100%;
+ 
 }
 
 .spec-badge{
@@ -251,9 +252,15 @@ body{
 
 .spec-sub{
   margin:20px auto 0;max-width:560px;
-  font-size:20px;line-height:1.8;color:var(--white);
+  font-size:20px;line-height:1.8;
   animation:fadeDown .8s .3s ease both;
   font-weight: 300;
+ padding: 5px;
+ border-radius: 10px;
+   background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px);         /* blur effect */
+  -webkit-backdrop-filter: blur(10px);
+ 
 }
 
 .spec-stats{
