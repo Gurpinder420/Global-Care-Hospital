@@ -154,16 +154,12 @@
       from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .hero h1 {
-      font-size: 3.3rem;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-      color: aliceblue;
-    }
+   
     .hero p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
       color: aliceblue;
+      margin-top: 10rem;
     }
     .btn {
       display: inline-block;
@@ -480,7 +476,15 @@
 
 .prev { left: 0; }
 .next { right: 0; }
-
+/* media */
+.med-content
+{
+  display: flex;
+  justify-content: space-evenly;
+  width: 1180px;
+  margin: auto;
+  padding: 15px;
+}
     /* form */
     .form-row {
       display: grid;
@@ -580,7 +584,14 @@
   .gallery-card img {
     height: 180px;
   }
-
+.med-content
+{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 0px;
+}
 }
     .scroll-reveal {
       opacity: 0;
