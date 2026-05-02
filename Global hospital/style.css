@@ -139,7 +139,7 @@
 
     /* hero */
     .hero {
-      background:  url('/images/home.jpg') ;
+      background:  url('/images/home.jpeg') ;
       background-size: 100% 100%;
       min-height: 90vh;
       /* height: 100vh; */
@@ -623,3 +623,64 @@
       opacity: 1;
       transform: translateY(0);
     }
+    
+/* specialities */
+
+    .slider {
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 300px;
+  height: 230px;
+  margin: 0 10px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  /* border: 2px solid red; */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  /* box-shadow: 0 0 20px #00f7ff; */
+}
+
+/* Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:rgb(227, 222, 222);
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.spec-text
+{
+  /* border: 2px solid red; */
+  text-align: start;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+/* Responsive */
+@media(max-width: 768px) {
+  .card {
+    min-width: 250px;
+  }
+}
